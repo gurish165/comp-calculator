@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { Separator } from "@/components/ui/separator";
 import { 
+  Building,
   Building2, 
   Calendar, 
   DollarSign, 
@@ -16,7 +17,6 @@ import {
   BadgeDollarSign,
   DollarSignIcon,
   PiggyBank,
-  Scale
 } from "lucide-react";
 import _ from 'lodash';
 
@@ -312,7 +312,7 @@ const CompCalculator: React.FC = () => {
               label="Company Value"
               value={inputs.companyValue}
               onChange={(v) => handleInputChange('companyValue', v)}
-              icon={<Building2 className="h-4 w-4" />}
+              icon={<Building className="h-4 w-4" />}
             />
             <InputField
               label="Exit Multiple"
@@ -346,7 +346,7 @@ const CompCalculator: React.FC = () => {
               label="NYC Tax Rate"
               value={inputs.nycTaxRate}
               onChange={(v) => handleInputChange('nycTaxRate', v)}
-              icon={<Scale className="h-4 w-4" />}
+              icon={<Building2 className="h-4 w-4" />}
               step="0.1"
               percentage={true}
             />
